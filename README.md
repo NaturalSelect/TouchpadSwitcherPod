@@ -19,7 +19,7 @@ docker run \
     -it \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -e DISPLAY \
-    "touchpadswitcher:latest"
+    "naturalselect/touchpadswitcherpod:latest"
 ```
 
 ### Using Docker
@@ -31,7 +31,7 @@ docker run \
     -it \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -e DISPLAY \
-    "touchpadswitcher:latest"
+    "naturalselect/touchpadswitcherpod:latest"
 ```
 
 ### Using Podman
@@ -45,7 +45,7 @@ docker run \
     -it \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -e DISPLAY \
-    "touchpadswitcher:latest"
+    "naturalselect/touchpadswitcherpod:latest"
 ```
 
 **Generate systemd service:**
