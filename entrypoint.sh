@@ -21,10 +21,8 @@ function main() {
         hasMouse=`foundMouse`
         if test ${hasMouse} -eq 1
         then
-            echo "Disable touchpad"
             xinput disable ${touchpadId}
         else
-            echo "Enable touchpad"
             xinput enable ${touchpadId}
         fi
         sleep 1s
