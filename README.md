@@ -28,7 +28,7 @@ docker run \
 docker run \
     --name touchpadswitcher\
     --restart always\
-    -it \
+    -d \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -e DISPLAY \
     "naturalselect/touchpadswitcherpod:latest"
@@ -42,7 +42,7 @@ docker run \
 docker run \
     --name touchpadswitcher\
     --restart always\
-    -it \
+    -d \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -e DISPLAY \
     "naturalselect/touchpadswitcherpod:latest"
@@ -53,7 +53,7 @@ docker run \
 ```bash
 docker generate systemd --new --name touchpadswitcher -f
 
-mv touchpadswitcher.service ~/.config/systemd/user/
+mv container-touchpadswitcher.service ~/.config/systemd/user/
 ```
 
 **Enable service:**
